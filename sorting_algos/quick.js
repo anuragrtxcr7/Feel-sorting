@@ -1,10 +1,9 @@
-
 async function partitionLomuto(ele, l, r){
     console.log('In partitionLomuto()');
     let i = l - 1;
     // color pivot element
     ele[r].style.background = 'red';
-    for(let j = l; j <= r - 1; j++){
+    for(let j = l; j < r; j++){
         console.log('In partitionLomuto for j');
         // color current element
         ele[j].style.background = 'yellow';
