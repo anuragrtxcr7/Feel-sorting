@@ -7,9 +7,9 @@ async function bubble() {
             console.log('In jth loop');
             ele[j].style.background = 'blue';
             ele[j+1].style.background = 'blue';
+            await waitforme(delay);
             if(parseInt(ele[j].style.height) > parseInt(ele[j+1].style.height)){
                 console.log('In if condition');
-                await waitforme(delay);
                 swap(ele[j], ele[j+1]);
             }
             ele[j].style.background = 'cyan';
