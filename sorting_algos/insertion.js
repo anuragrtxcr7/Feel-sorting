@@ -7,7 +7,6 @@ async function insertion() {
         console.log("In ith loop");
         let j = i - 1;
         let key = ele[i].style.height;
-        // color
         ele[i].style.background = "blue";
 
         while (j >= 0 && parseInt(ele[j].style.height) > parseInt(key)) {
